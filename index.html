@@ -39,7 +39,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        align-items: stretch; /* IMPORTANT */
+        align-items: stretch; 
         }
         .card {
         background: rgba(255, 255, 255, 0.1);
@@ -48,63 +48,32 @@
         box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         transition: transform 0.3s ease;
         cursor: pointer;
-        display: flex;                 /* NEW */
-        flex-direction: column;        /* NEW */
-        justify-content: flex-start;        /* vertical center */
-        text-align: center;            /* horizontal center */
+        display: flex;                
+        flex-direction: column;        
+        justify-content: flex-start;        
+        text-align: center;            
         }
         .card:hover {
         transform: translateY(-8px);
         }
-        /*.card h3 {
-        margin-top: 0;
-        }*/
-        /*.card h3 {
-        min-height: 3.4em;          
-        margin: 0 0 8px;
-        margin-bottom: 6px;
-        display: block;            
-        line-height: 1.3;
-        }
         .card h3 {
-    font-weight: bold;       
-    margin: 0 0 6px;
-    line-height: 1.3;
-}
-
-.card .author {
-    margin: 0 0 10px;
-    font-size: 0.95rem;
-    opacity: 0.85;
-}
-.card h3 {
-  margin: 0 0 6px;
-  line-height: 1.3;
-  text-align: center;   
-}*/
-
-.card h3 {
-    margin: 0 0 10px;
-    line-height: 1.3;
-    text-align: center;          /* centers content */
-}
-
-.card h3 .title {
-    display: block;              /* forces new line for title */
-    font-weight: bold;
-}
-
-.card h3 .author {
-    display: block;              /* author on next line */
-    font-style: italic;
-    font-weight: normal;         /* optional */
-    opacity: 0.85;
-    font-size: 1.1rem;          /* slightly smaller */
-}
-
-
+            margin: 0 0 10px;
+            line-height: 1.3;
+            text-align: center;          
+        }
+        .card h3 .title {
+            display: block;              
+            font-weight: bold;
+        }
+        .card h3 .author {
+            display: block;              
+            font-style: italic;
+            font-weight: normal;         
+            opacity: 0.85;
+            font-size: 1.1rem;          
+        }
         .card p {
-        margin: 0;        /* remove default margin */
+        margin: 0;        
         line-height: 1.35;
         }
         footer {
@@ -176,34 +145,29 @@
         </div>
 
         <!-- PDF 2 -->
-        <!-- <div class="card" onclick="window.open('./Computer Networking - A Top-Down Approach [Global Edition].pdf','_blank')">
-        <h3>📘"Computer Networking: A Top-Down Approach"</h3>
-        <p class="author"><i>Kurose & Ross</i></p>
-        <p> The industry-standard textbook that explains networking using a top-down approach — widely used in universities worldwide.</p>
-        </div> -->
-<div class="card" onclick="window.open('./Computer Networking - A Top-Down Approach [Global Edition].pdf','_blank')">
-  <h3>
-    <span class="title">Computer Networking: A Top-Down Approach</span>
-    <span class="author">James F. Kurose • Keith W. Ross</span>
-  </h3>
-  <p>The industry-standard textbook that explains networking using a top-down approach — widely used in universities worldwide.</p>
-</div>
-
-
+        <div class="card" onclick="window.open('./Computer Networking - A Top-Down Approach [Global Edition].pdf','_blank')">
+        <h3>
+            <span class="title">Computer Networking: A Top-Down Approach</span>
+            <span class="author">James F. Kurose • Keith W. Ross</span>
+        </h3>
+        <p>The industry-standard textbook that explains networking using a top-down approach — widely used in universities worldwide.</p>
+        </div>
 
         <!-- PDF 3 -->
         <div class="card" onclick="window.open('./Network Know-How_no starch press.pdf','_blank')">
-  <h3>
-    <span class="title">Network Know-How:An Essential Guide for the Accidental Admin</span>
-    <span class="author">John Ross</span>
-  </h3>
-        <p>A practical guide to networking concepts for beginners and accidental admins — explains how things actually work.</p>
+        <h3>
+            <span class="title">Network Know-How:An Essential Guide for the Accidental Admin</span>
+            <span class="author">John Ross</span>
+        </h3>
+                <p>A practical guide to networking concepts for beginners and accidental admins — explains how things actually work.</p>
         </div>
     </div>
     </section>
 
     <footer>
-    © 2026 • Bits to Bandwidth • A Computer Networks Resource Library
+    <a href="https://github.com/3rr0r-505/Bits-to-Bandwidth" target="_blank" style="color: inherit; text-decoration: none;">
+        © 2026 • Bits to Bandwidth • A Computer Networks Resource Library
+    </a>
     </footer>
     </body>
 </html>
