@@ -11,4 +11,4 @@ A simple hub for **Computer Networks resources** — slides, PDFs, and books for
   - Network Know-How: An Essential Guide for the Accidental Admin – *John Ross*
 
 ## Live Page
-[Open Bits to Bandwidth](https://3rr0r-505.github.io/Bits-To-Bandwidth/)
+[Visit Bits to Bandwidth](https://3rr0r-505.github.io/Bits-To-Bandwidth/)
