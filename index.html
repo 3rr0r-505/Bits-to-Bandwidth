@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bits to Bandwidth</title>
+
+    <!-- CSS Styles -->
+    <style>
+        body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        }
+        header {
+        padding: 60px 20px;
+        text-align: center;
+        }
+        header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        }
+        header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        max-width: 800px;
+        margin: auto;
+        }
+        .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 20px;
+        }
+        .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        align-items: stretch; /* IMPORTANT */
+        }
+        .card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        display: flex;                 /* NEW */
+        flex-direction: column;        /* NEW */
+        justify-content: flex-start;        /* vertical center */
+        text-align: center;            /* horizontal center */
+        }
+        .card:hover {
+        transform: translateY(-8px);
+        }
+        /*.card h3 {
+        margin-top: 0;
+        }*/
+        /*.card h3 {
+        min-height: 3.4em;          
+        margin: 0 0 8px;
+        margin-bottom: 6px;
+        display: block;            
+        line-height: 1.3;
+        }
+        .card h3 {
+    font-weight: bold;       
+    margin: 0 0 6px;
+    line-height: 1.3;
+}
+
+.card .author {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+.card h3 {
+  margin: 0 0 6px;
+  line-height: 1.3;
+  text-align: center;   
+}*/
+
+.card h3 {
+    margin: 0 0 10px;
+    line-height: 1.3;
+    text-align: center;          /* centers content */
+}
+
+.card h3 .title {
+    display: block;              /* forces new line for title */
+    font-weight: bold;
+}
+
+.card h3 .author {
+    display: block;              /* author on next line */
+    font-style: italic;
+    font-weight: normal;         /* optional */
+    opacity: 0.85;
+    font-size: 1.1rem;          /* slightly smaller */
+}
+
+
+        .card p {
+        margin: 0;        /* remove default margin */
+        line-height: 1.35;
+        }
+        footer {
+        text-align: center;
+        padding: 20px;
+        opacity: 0.7;
+        font-size: 0.9rem;
+        }
+        .popup {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.7);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        }
+        .popup-content {
+        background: #1e293b;
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+        }
+        .popup-content a {
+        display: block;
+        margin: 10px 0;
+        color: #00c6ff;
+        text-decoration: none;
+        font-weight: bold;
+        }
+        .close {
+        margin-top: 15px;
+        cursor: pointer;
+        opacity: 0.8;
+        }
+        .close:hover {
+        opacity: 1;
+        }
+        @media (max-width: 700px) {
+        .cards {
+            grid-template-columns: 1fr;
+        }
+        }
+    </style>
+
+    </head>
+    <body>
+
+    <header>
+    <h1>Bits to Bandwidth</h1>
+    <p>A focused Computer Networks resource hub — clear slides, readable PDFs, and trusted references to understand networking from fundamentals to real-world protocols.</p>
+    </header>
+
+    <section class="container" style="flex:1;">
+    <div class="cards">
+
+            <!-- PPT Card -->
+        <a href="./Computer Network - From Bits to Bandwidth.pptx" download style="text-decoration:none;color:inherit;">
+        <div class="card">
+            <h3>📊 From Bits to Bandwidth — Slides</h3>
+            <p>A concept-first presentation covering Computer Networks step by step — perfect for quick understanding.</p>
+        </div>
+        </a>
+
+        <!-- PDF 1 -->
+        <div class="card" onclick="window.open('./Computer Network - From Bits to Bandwidth.pdf','_blank')">
+        <h3>📄 From Bits to Bandwidth — PDF</h3>
+        <p>A clean, printable version of the slides for distraction-free reading and fast revision.</p>
+        </div>
+
+        <!-- PDF 2 -->
+        <!-- <div class="card" onclick="window.open('./Computer Networking - A Top-Down Approach [Global Edition].pdf','_blank')">
+        <h3>📘"Computer Networking: A Top-Down Approach"</h3>
+        <p class="author"><i>Kurose & Ross</i></p>
+        <p> The industry-standard textbook that explains networking using a top-down approach — widely used in universities worldwide.</p>
+        </div> -->
+<div class="card" onclick="window.open('./Computer Networking - A Top-Down Approach [Global Edition].pdf','_blank')">
+  <h3>
+    <span class="title">Computer Networking: A Top-Down Approach</span>
+    <span class="author">James F. Kurose • Keith W. Ross</span>
+  </h3>
+  <p>The industry-standard textbook that explains networking using a top-down approach — widely used in universities worldwide.</p>
+</div>
+
+
+
+        <!-- PDF 3 -->
+        <div class="card" onclick="window.open('./Network Know-How_no starch press.pdf','_blank')">
+  <h3>
+    <span class="title">Network Know-How:An Essential Guide for the Accidental Admin</span>
+    <span class="author">John Ross</span>
+  </h3>
+        <p>A practical guide to networking concepts for beginners and accidental admins — explains how things actually work.</p>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+    © 2026 • Bits to Bandwidth • A Computer Networks Resource Library
+    </footer>
+    </body>
+</html>
